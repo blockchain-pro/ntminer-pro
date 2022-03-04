@@ -1,15 +1,20 @@
 
+
 # 以太矿工福音！
 
+
+**增加PhoenixMiner内核加密适配**
+
+
 **增加针对三大主要矿池vpn+ssl加密的支持：**
-
+	
 	多节点自动负载：
-	币印：pool-auto.xxminer.com:8802
+	
+	币印：pool-auto.xxminer.com:8588
 	 
-	鱼池：pool-auto.xxminer.com:8803
+	鱼池：pool-auto.xxminer.com:8688
 
-	E池： pool-auto.xxminer.com:8804
-
+	E池： pool-auto.xxminer.com:8788
     
 
 
@@ -17,18 +22,18 @@
 
 1. 加密挖矿地址：
 
->     币印：stratum+ssl://pool-auto.xxminer.com:8802
->     鱼池：stratum+ssl://pool-auto.xxminer.com:8803
->     E池：  stratum+ssl://pool-auto.xxminer.com:8804
+>     币印：stratum+ssl://pool-auto.xxminer.com:8588
+>     鱼池：stratum+ssl://pool-auto.xxminer.com:8688
+>     E池： stratum+ssl://pool-auto.xxminer.com:8788
 
 >     eg:
 >     带v2ray代理连接方式：
->     nbminer -a ethash -o stratum+ssl://pool-auto.xxminer.com:8802 -u 0x877EE89a5682Dc17353128E81FAA0265481f4133.default –proxy=127.0.0.1:12808 -log –proxy=127.0.0.1:12808 为本地v2ray socket5 代理。
+>     nbminer -a ethash -o stratum+ssl://pool-auto.xxminer.com:8588 -u 0x877EE89a5682Dc17353128E81FAA0265481f4133.default –proxy=127.0.0.1:12808 -log –proxy=127.0.0.1:12808 为本地v2ray socket5 代理。
 >     
 >     不带v2ray代理连接方式：
->     nbminer -a ethash -o stratum+ssl://pool-auto.xxminer.com:8802 -u 0x877EE89a5682Dc17353128E81FAA0265481f4133.default -log
+>     nbminer -a ethash -o stratum+ssl://pool-auto.xxminer.com:8588 -u 0x877EE89a5682Dc17353128E81FAA0265481f4133.default -log
 
-3. 下载开源矿工 for 币印ssl加密矿池：
+3. 下载开源矿工 for VPN ssl加密矿池：
     > https://github.com/blockchain-pro/ntminer-pro/releases
     > 
     > 解压后填入挖矿账户，直接开挖，使用方法同原开源矿工
@@ -42,9 +47,9 @@
 
 4. Hive OS 加密矿池连接飞行表配置：
 > pool config 中手动添加矿池地址：
-币印：pool-auto.xxminer.com:8802
-鱼池：pool-auto.xxminer.com:8803
-E池： pool-auto.xxminer.com:8804
+币印：pool-auto.xxminer.com:8588
+鱼池：pool-auto.xxminer.com:8688
+E池： pool-auto.xxminer.com:8788
 
 
 > Miner config中添加NBminer并修改Pool url 为stratum+ssl://%URL%
