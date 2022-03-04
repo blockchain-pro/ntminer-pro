@@ -29,7 +29,7 @@
 >     nbminer -a ethash -o stratum+ssl://pool-auto.xxminer.com:8802 -u 0x877EE89a5682Dc17353128E81FAA0265481f4133.default -log
 
 3. 下载开源矿工 for 币印ssl加密矿池：
-    > https://github.com/blockchain-pro/ntminer/releases/download/v1.5/Ntminer-for-vpn-ssl-v1.5.zip
+    > https://github.com/blockchain-pro/ntminer-pro/releases
     > 
     > 解压后填入挖矿账户，直接开挖，使用方法同原开源矿工
     > 
